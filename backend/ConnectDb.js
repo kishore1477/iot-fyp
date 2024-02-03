@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
         const DB_OPTIONS ={
             dbName : "fyp"
         }
-   mongoose.connect(DataBaseUrl, DB_OPTIONS)
+ await  mongoose.connect(DataBaseUrl, DB_OPTIONS)
     console.log("connected Successfully")
     } catch (error) {
         console.log(error)
